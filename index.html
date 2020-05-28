@@ -1,7 +1,19 @@
 <html>
     <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
     <body>
-        <div class="caption">Inventory</div>	
+            <!--
+            <div class="row">
+                <input type="radio" name="expand">
+                <span class="cell primary" data-label="Hostname">---</span>
+                <span class="cell" data-label="IPAddress">---</span>
+                <span class="cell" data-label="Description">---</span>
+                <span class="cell" data-label="CPU">---</span>
+                <span class="cell" data-label="Memory">---</span>
+                <span class="cell" data-label="HardDisk">---</span>
+                <span class="cellstatus" data-label="Status">---</span>
+            </div>
+            -->
+        <div class="caption">Home Hardware</div>	
             <div id="table">
                 <div class="header-row row">
                 <span class="cell primary">Hostname</span>
@@ -17,9 +29,9 @@
                 <span class="cell primary" data-label="Hostname">ncwp-pfsense01.r00tedvw.local</span>
                 <span class="cell" data-label="IPAddress">10.0.1.3</span>
                 <span class="cell" data-label="Description">pfSense Server</span>
-                <span class="cell" data-label="CPU">7%</span>
-                <span class="cell" data-label="Memory">6%</span>
-                <span class="cell" data-label="HardDisk">40%</span>
+                <span class="cell" data-label="CPU">---</span>
+                <span class="cell" data-label="Memory">---</span>
+                <span class="cell" data-label="HardDisk">---</span>
                 <span class="cellstatus" data-label="Status">Online</span>
             </div>
             <div class="row">
@@ -27,9 +39,9 @@
                 <span class="cell primary" data-label="Hostname">ncwp-srw2024p.r00tedvw.local</span>
                 <span class="cell" data-label="IPAddress">10.0.1.4</span>
                 <span class="cell" data-label="Description">Linksys 24-port POE Switch</span>
-                <span class="cell" data-label="CPU">10%</span>
-                <span class="cell" data-label="Memory">20%</span>
-                <span class="cell" data-label="HardDisk">40%</span>
+                <span class="cell" data-label="CPU">---</span>
+                <span class="cell" data-label="Memory">---</span>
+                <span class="cell" data-label="HardDisk">---</span>
                 <span class="cellstatus" data-label="Status">Online</span>
             </div>
             <div class="row">
@@ -37,9 +49,9 @@
                 <span class="cell primary" data-label="Hostname">ncwp-ubiquiti01.r00tedvw.local</span>
                 <span class="cell" data-label="IPAddress">10.0.1.5</span>
                 <span class="cell" data-label="Description">Ubiquiti wap</span>
-                <span class="cell" data-label="CPU">29%</span>
-                <span class="cell" data-label="Memory">35%</span>
-                <span class="cell" data-label="HardDisk">40%</span>
+                <span class="cell" data-label="CPU">---</span>
+                <span class="cell" data-label="Memory">---</span>
+                <span class="cell" data-label="HardDisk">---</span>
                 <span class="cellstatus" data-label="Status">Online</span>
             </div>
             <div class="row">
@@ -47,19 +59,31 @@
                 <span class="cell primary" data-label="Hostname">ncwp-hp1217nfw.r00tedvw.local</span>
                 <span class="cell" data-label="IPAddress">10.0.1.9</span>
                 <span class="cell" data-label="Description">HP m1217nfw</span>
-                <span class="cell" data-label="CPU">5%</span>
-                <span class="cell" data-label="Memory">8%</span>
-                <span class="cell" data-label="HardDisk">40%</span>
+                <span class="cell" data-label="CPU">---</span>
+                <span class="cell" data-label="Memory">---</span>
+                <span class="cell" data-label="HardDisk">---</span>
                 <span class="cellstatus" data-label="Status">Online</span>
+            </div>
+        </div>
+        <div class="caption">Server Hardware</div>
+            <div id="table">
+                <div class="header-row row">
+                <span class="cell primary">Hostname</span>
+                <span class="cell">IP Address</span>
+                <span class="cell">Description</span>
+                <span class="cell">CPU</span>
+                <span class="cell">Memory</span>
+                <span class="cell">HardDisk</span>
+                <span class="cell">Status</span>
             </div>
             <div class="row">
                 <input type="radio" name="expand">
                 <span class="cell primary" data-label="Hostname">ncwp-esxi01.r00tedvw.local</span>
                 <span class="cell" data-label="IPAddress">10.0.1.20</span>
                 <span class="cell" data-label="Description">ESXi Server</span>
-                <span class="cell" data-label="CPU">15%</span>
-                <span class="cell" data-label="Memory">19%</span>
-                <span class="cell" data-label="HardDisk">40%</span>
+                <span class="cell" data-label="CPU">---</span>
+                <span class="cell" data-label="Memory">---</span>
+                <span class="cell" data-label="HardDisk">---</span>
                 <span class="cellstatus" data-label="Status">Online</span>
             </div>
             <div class="row">
@@ -67,9 +91,113 @@
                 <span class="cell primary" data-label="Hostname">ncwp-esxi02.r00tedvw.local</span>
                 <span class="cell" data-label="IPAddress">10.0.1.22</span>
                 <span class="cell" data-label="Description">ESXi Server</span>
-                <span class="cell" data-label="CPU">29%</span>
-                <span class="cell" data-label="Memory">37%</span>
-                <span class="cell" data-label="HardDisk">40%</span>
+                <span class="cell" data-label="CPU">---</span>
+                <span class="cell" data-label="Memory">---</span>
+                <span class="cell" data-label="HardDisk">---</span>
+                <span class="cellstatus" data-label="Status">Online</span>
+            </div>
+        </div>
+        <div class="caption">Virtual Machines</div>
+            <div id="table">
+                <div class="header-row row">
+                <span class="cell primary">Hostname</span>
+                <span class="cell">IP Address</span>
+                <span class="cell">Description</span>
+                <span class="cell">CPU</span>
+                <span class="cell">Memory</span>
+                <span class="cell">HardDisk</span>
+                <span class="cell">Status</span>
+            </div>
+            <div class="row">
+                <input type="radio" name="expand">
+                <span class="cell primary" data-label="Hostname">ncwv-winsrv01.r00tedvw.local</span>
+                <span class="cell" data-label="IPAddress">10.0.1.11</span>
+                <span class="cell" data-label="Description">Windows Server</span>
+                <span class="cell" data-label="CPU">---</span>
+                <span class="cell" data-label="Memory">---</span>
+                <span class="cell" data-label="HardDisk">---</span>
+                <span class="cellstatus" data-label="Status">Offline</span>
+            </div>
+            <div class="row">
+                <input type="radio" name="expand">
+                <span class="cell primary" data-label="Hostname">serverlist.r00tedvw.local</span>
+                <span class="cell" data-label="IPAddress">10.0.1.29</span>
+                <span class="cell" data-label="Description">List of all resources on the network</span>
+                <span class="cell" data-label="CPU">---</span>
+                <span class="cell" data-label="Memory">---</span>
+                <span class="cell" data-label="HardDisk">---</span>
+                <span class="cellstatus" data-label="Status">Online</span>
+            </div>
+        </div>
+        <div class="caption">IP Cameras</div>
+            <div id="table">
+                <div class="header-row row">
+                <span class="cell primary">Hostname</span>
+                <span class="cell">IP Address</span>
+                <span class="cell">Description</span>
+                <span class="cell">CPU</span>
+                <span class="cell">Memory</span>
+                <span class="cell">HardDisk</span>
+                <span class="cell">Status</span>
+            </div>
+            <div class="row">
+                <input type="radio" name="expand">
+                <span class="cell primary" data-label="Hostname">ncwp-BackPatio.r00tedvw.local</span>
+                <span class="cell" data-label="IPAddress">10.0.1.50</span>
+                <span class="cell" data-label="Description">Reolink4MP BackPatio</span>
+                <span class="cell" data-label="CPU">---</span>
+                <span class="cell" data-label="Memory">---</span>
+                <span class="cell" data-label="HardDisk">---</span>
+                <span class="cellstatus" data-label="Status">Online</span>
+            </div>
+            <div class="row">
+                <input type="radio" name="expand">
+                <span class="cell primary" data-label="Hostname">ncwp-DrivewayRear.r00tedvw.local</span>
+                <span class="cell" data-label="IPAddress">10.0.1.51</span>
+                <span class="cell" data-label="Description">Reolink5MP DrivewayRear</span>
+                <span class="cell" data-label="CPU">---</span>
+                <span class="cell" data-label="Memory">---</span>
+                <span class="cell" data-label="HardDisk">---</span>
+                <span class="cellstatus" data-label="Status">Online</span>
+            </div>
+            <div class="row">
+                <input type="radio" name="expand">
+                <span class="cell primary" data-label="Hostname">ncwp-FrontDoor.r00tedvw.local</span>
+                <span class="cell" data-label="IPAddress">10.0.1.52</span>
+                <span class="cell" data-label="Description">Reolink5MP FrontDoor</span>
+                <span class="cell" data-label="CPU">---</span>
+                <span class="cell" data-label="Memory">---</span>
+                <span class="cell" data-label="HardDisk">---</span>
+                <span class="cellstatus" data-label="Status">Online</span>
+            </div>
+            <div class="row">
+                <input type="radio" name="expand">
+                <span class="cell primary" data-label="Hostname">ncwp-RearWalkway.r00tedvw.local</span>
+                <span class="cell" data-label="IPAddress">10.0.1.53</span>
+                <span class="cell" data-label="Description">Reolink5MP RearWalkway</span>
+                <span class="cell" data-label="CPU">---</span>
+                <span class="cell" data-label="Memory">---</span>
+                <span class="cell" data-label="HardDisk">---</span>
+                <span class="cellstatus" data-label="Status">Online</span>
+            </div>
+            <div class="row">
+                <input type="radio" name="expand">
+                <span class="cell primary" data-label="Hostname">ncwp-DrivewayFront.r00tedvw.local</span>
+                <span class="cell" data-label="IPAddress">10.0.1.54</span>
+                <span class="cell" data-label="Description">Reolink5MP DrivewayFront</span>
+                <span class="cell" data-label="CPU">---</span>
+                <span class="cell" data-label="Memory">---</span>
+                <span class="cell" data-label="HardDisk">---</span>
+                <span class="cellstatus" data-label="Status">Online</span>
+            </div>
+            <div class="row">
+                <input type="radio" name="expand">
+                <span class="cell primary" data-label="Hostname">ncwp-GarageDoors.r00tedvw.local</span>
+                <span class="cell" data-label="IPAddress">10.0.1.55</span>
+                <span class="cell" data-label="Description">Reolink4MP GarageDoors</span>
+                <span class="cell" data-label="CPU">---</span>
+                <span class="cell" data-label="Memory">---</span>
+                <span class="cell" data-label="HardDisk">---</span>
                 <span class="cellstatus" data-label="Status">Online</span>
             </div>
         </div>
