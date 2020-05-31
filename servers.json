@@ -1,0 +1,56 @@
+[
+  {
+    "hostname": "ncwp-pfsense01.r00tedvw.local",
+    "ipaddress": "10.0.1.3",
+    "description": "pfSense Server",
+    "cpu": "7%",
+    "memory": "6%",
+    "harddisk": "40%",
+    "status": "Online"
+  },
+  {
+    "hostname": "ncwp-srw2024p.r00tedvw.local",
+    "ipaddress": "10.0.1.4",
+    "description": "Linksys 24-port POE Switch",
+    "cpu": "10%",
+    "memory": "20%",
+    "harddisk": "40%",
+    "status": "Online"
+  },
+  {
+    "hostname": "ncwp-ubiquiti01.r00tedvw.local",
+    "ipaddress": "10.0.1.5",
+    "description": "Ubiquiti wap",
+    "cpu": "29%",
+    "memory": "35%",
+    "harddisk": "40%",
+    "status": "Online"
+  },
+  {
+    "hostname": "ncwp-esxi01.r00tedvw.local",
+    "ipaddress": "10.0.1.20",
+    "description": "ESXi Server",
+    "cpu": "15%",
+    "memory": "19%",
+    "harddisk": "40%",
+    "status": "Online"
+  },
+  {
+    "hostname": "ncwp-pfsense01.r00tedvw.local",
+    "ipaddress": "10.0.1.3",
+    "description": "pfSense Server",
+    "cpu": "7%",
+    "memory": "6%",
+    "harddisk": "40%",
+    "status": "Online"
+  },
+  {
+    "hostname": "ncwp-esxi02.r00tedvw.local",
+    "ipaddress": "10.0.1.2",
+    "description": "ESXi Server",
+    "cpu": "29%",
+    "memory": "37%",
+    "harddisk": "40%",
+    "status": "Online"
+  }
+]
